@@ -5,8 +5,11 @@ from numpy import loadtxt
 from keras.models import Sequential
 from keras.layers import Dense
 from sklearn.model_selection import train_test_split
+from os import getcwd
 
-dataset = loadtxt('pima-indians-diabetes.csv', delimiter=',')
+workpath=getcwd()
+
+dataset = loadtxt(workpath+'/data/pima-indians-diabetes.csv', delimiter=',')
 print(dataset.shape)
 x=dataset[:,0:8]
 y=dataset[:,8]
@@ -18,7 +21,8 @@ model.add(Dense(1,activation='sigmoid'))
 model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 model.fit(x_train,y_train,epochs=150,batch_size=50)
 _,accuracy=model.evaluate(x_test,y_test,verbose=0)
-print('Accuracy%.2f'%(accuracy*100))
+#print('Accuracy%.2f'%(accuracy*100))
+print(accuracy)
 
 pred=model.predict(x_test)
 y_pred=np.round(pred).astype(int)
