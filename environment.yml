@@ -18,5 +18,5 @@ dependencies:
   # packages
   - scikit-learn
   - keras
-  - tensorflow >=2.5.0
+  
 
