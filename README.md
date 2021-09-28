@@ -1,5 +1,32 @@
-# phy-nn-gpu
+# Python Conda Environment
+Welcome to the Python Environment repository.Here you will find a conda environment that can be installed on your computer using a .yaml file.
+
+Getting started with Conda Environment
+
+About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
+Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Quick Start :Setup Your Environment
+
+-To begin, install the environment using:
+
+  conda env create -f environment.yml
+
+-Also note that for the code above to work,  need to be in the directory where the environment.yml file lives so CD to that directory first
+
+-update your environment at any time using:
+  conda env update -f environment.yml
+
+-View envs installed
+  conda info --envs
+  
+-Activate the environment
+  conda activate package
+
+The environment name is package as defined in the environment.yml file.
+
 This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.
+
 
 
 INPUT VARIABLES(X):
