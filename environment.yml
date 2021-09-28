@@ -1,0 +1,22 @@
+name: package
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.8.11
+  - pip
+  # Core scientific python
+  - numpy
+  - pandas
+ 
+  # Plotting
+  - matplotlib
+  - plotly
+  - seaborn
+
+  # packages
+  - scikit-learn
+  - keras
+  
+
