@@ -1,4 +1,4 @@
-name: package
+name: neural-pkg
 channels:
   - conda-forge
   - defaults
@@ -6,17 +6,14 @@ channels:
 dependencies:
   - python=3.8.11
   - pip
-  # Core scientific python
-  - numpy
-  - pandas
- 
-  # Plotting
-  - matplotlib
-  - plotly
-  - seaborn
-
-  # packages
-  - scikit-learn
-  - keras
-  
+  - pip:
+    - numpy==1.19.5
+    - pandas==1.3.3
+    - matplotlib==3.4.3
+    - plotly
+    - seaborn==0.11.2
+    - uproot==4.1.2
+    - scikit-learn==0.24.2
+    - keras==2.6.0
+    - tensorflow==2.6.0  
 
