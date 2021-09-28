@@ -6,7 +6,7 @@ Getting started with Conda Environment
 About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
 Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
-Quick Start :Setup Your Environment
+Quick Start :Setup the Environment
 
 -To begin, install the environment using:
 
@@ -14,7 +14,7 @@ Quick Start :Setup Your Environment
 
 -Also note that for the code above to work,  need to be in the directory where the environment.yml file lives so CD to that directory first
 
--update your environment at any time using:
+-update the environment at any time using:
   conda env update -f environment.yml
 
 -View envs installed
@@ -57,7 +57,9 @@ Optimizer:
 The choice of optimixation algorithm for the deep learning model can mean the difference between good results .Adam optimizer can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data.
 
 Accuracy is claculated using metrics argument.
-Keras Model is used on the loaded data by using fit() function.Here data training over epochs and epochs is split into batches.
+Keras Model is used on the loaded data by using fit() function.Here data training over epochs and epochs is split into batches.After the training ,model is evaluated using evaluate() function which return the loss of the model and accuracy of the model.
 
 Make Predictions.
-As Sigmoid activation functions are used output value will be in the range of 0 and 1,hence it is rounded off 
+As Sigmoid activation functions are used output value will be in the range of 0 and 1,hence it is rounded off .Prediction is done by calling the predict() function on the model
+Running the code shows a message for 150 epochs printing the loss and accuracy.
+The result provide the actual and predicted values.
