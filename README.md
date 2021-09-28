@@ -8,11 +8,11 @@ Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 Quick Start :Setup the Environment
 
+-Also note that for the code above to work,  need to be in the directory where the environment.yml file lives so CD to that directory first
+
 -To begin, install the environment using:
 
   conda env create -f environment.yml
-
--Also note that for the code above to work,  need to be in the directory where the environment.yml file lives so CD to that directory first
 
 -update the environment at any time using:
   conda env update -f environment.yml
@@ -24,6 +24,8 @@ Quick Start :Setup the Environment
   conda activate package
 
 The environment name is package as defined in the environment.yml file.
+
+About the Program:
 
 This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.
 
