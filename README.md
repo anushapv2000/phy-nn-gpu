@@ -17,7 +17,7 @@ Activate the environment</br>
  update the environment at any time using:</br>
  >````conda env update -f environment.yml````
 
-View envs installed</br>
+To view the environments installed</br>
 >  ````conda info --envs````
   
 
