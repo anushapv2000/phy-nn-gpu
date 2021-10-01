@@ -5,9 +5,9 @@
 
 ***Quick Start :Setup the Environment***
 
-Also note that for the code above to work,  need to be in the directory where the environment.yml file lives so CD to that directory first
+Note that for the code above to work,you need to be in the directory where the environment.yml file lives so 'cd' to that directory first
 
-The environment name is package as defined in the environment.yml file.</br>
+The environment name is neural-pkg as defined in the environment.yml file.</br>
 To begin, install the environment using:</br>
 > ```conda env create -f environment.yml```
 
